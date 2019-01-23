@@ -1,73 +1,50 @@
-## Voyager
+# Ink
 
-Just another jekyll theme. Demo: <http://redvi.github.io/voyager>
+Ink is a minmal two-column theme for [Jekyll](http://jekyllrb.com) 
 
-### Feathures:
+![Screenshot](https://s32.postimg.org/gdtp6pw1x/ink.png)
 
-All HTML files are compressed (see `_layouts/compress.html`).
+# Installation 
 
-**Post**
+##### Setup on your local machine
+ * Clone or download the repository
+ * You should have [ruby](https://www.ruby-lang.org/en/) installed in your system
+ * Install bundler which helps in specifying and installing dependencies of any Ruby project ```gem install bundler```
+ * Go to the root of the repo and run this - ```bundle install```
+ * Then - ```bundle exec jekyll serve```
 
-All post settings can be changed. Example:
+##### Make it your own
+ * Fork the repository
+ * Follow the configuration step
+ * Host your site/blog with **Ink**
 
-```
----
-layout: post
-bg: '2016/background.jpg'
-title: "Post Heading"
-crawlertitle: "page title"
-summary: "post description"
-date: 2016-06-29
-tags : ['front-end']
-slug: post-url
-author: "Author"
-categories: posts
----
-```
+# Configuration 
+ * Change the following in ```_config.yml```
+ ```
+    name:               "Ink"
+    description:        "A minimalistic jekyll theme for humans"
+    url:                ""
+    author:             "thinker3197"
+    email:              "jhondoe@abc.com"
+    gravatar_hash:      "205e460b479e2e5b48aec07710c08d50"
+    twitter:            "jhondoe"
+    email:              "jhondoe@abc.com"
+    github:             "jhondoe"
+    pinterest:          "jhondoe"
+    linkedin:           "jhondoe"
+    facebook:           "jhondoe"
+    
+ ```
+ * Set the number of posts that appear in each page by changing the ```paginate``` option in ```_config.yml``` file. Default value is 5.
+ * Add more navigation menus in the ```nav``` section in ```_config.yml```. 
+ * Add your custom url in ```url``` option. Example : http://thinker3197.github.io/blog. Consult the ```gh-pages``` branch to see the basic setup for a blog.
+ * Add your custom background by adding a custom background link in the ```background``` option in ```_config.yml```.
+ 
+# Licensce
 
-`bg` is a path to background of your article. By default backgrounds are placed in the `assets/images` directory.
+Open sourced under [MIT LICENSE](https://github.com/thinker3197/ink/blob/master/LICENSE) 
 
-**Page**
 
-If page contains `active` tag, it will be show on site menu.
 
-```
----
-layout: page
-title: "About"
-permalink: /about/
-active: about
----
-```
 
-**Archive**
 
-Archive page is sorting posts by tags. No more than one tag in one post.
-
-Good:
-
-```
-tags : ['front-end']
-```
-
-Bad:
-
-```
-tags : ['front-end', 'jekyll']
-```
-
-Don't forget to change `_config.yml`.
-
-**Relative paths**
-
-If your blog is not in the root directory, you can include images with a relative path. For example:
-
-```
-![my_image]({{ site.images | relative_url }}/image.jpg)
-```
-
-## Production environment
-
-Build for production:
-
-`JEKYLL_ENV=production jekyll build`
