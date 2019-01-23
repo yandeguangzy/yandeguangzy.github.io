@@ -1,19 +1,73 @@
-# NexT
+## Voyager
 
-> 精于心，简于形
+Just another jekyll theme. Demo: <http://redvi.github.io/voyager>
 
-NexT 是由 [Hexo NexT](https://github.com/iissnan/hexo-theme-next) 移植而来的 Jekyll 主题。<!--commit: f951075d9b739d26b42472431995fa68d08796aa-->
+### Feathures:
 
-<a href="http://simpleyyt.github.io/jekyll-theme-next/" target="_blank">在线预览 Preview</a> | <a href="http://simpleyyt.github.io" target="_blank">Yitao's Blog</a> | <a href="http://theme-next.simpleyyt.com" target="_blank">NexT 使用文档</a> |  [English Documentation](README.en.md)
+All HTML files are compressed (see `_layouts/compress.html`).
 
-[![Join the chat at https://gitter.im/simpleyyt/jekyll-theme-next](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jekyll-theme-next/lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+**Post**
 
-![NexT Schemes](http://iissnan.com/nexus/next/next-schemes.jpg)
+All post settings can be changed. Example:
 
+```
+---
+layout: post
+bg: '2016/background.jpg'
+title: "Post Heading"
+crawlertitle: "page title"
+summary: "post description"
+date: 2016-06-29
+tags : ['front-end']
+slug: post-url
+author: "Author"
+categories: posts
+---
+```
 
-## 浏览器支持 Browser support
+`bg` is a path to background of your article. By default backgrounds are placed in the `assets/images` directory.
 
-![Browser support](http://iissnan.com/nexus/next/browser-support.png)
+**Page**
 
+If page contains `active` tag, it will be show on site menu.
 
-## 若觉得不错，star一下吧
+```
+---
+layout: page
+title: "About"
+permalink: /about/
+active: about
+---
+```
+
+**Archive**
+
+Archive page is sorting posts by tags. No more than one tag in one post.
+
+Good:
+
+```
+tags : ['front-end']
+```
+
+Bad:
+
+```
+tags : ['front-end', 'jekyll']
+```
+
+Don't forget to change `_config.yml`.
+
+**Relative paths**
+
+If your blog is not in the root directory, you can include images with a relative path. For example:
+
+```
+![my_image]({{ site.images | relative_url }}/image.jpg)
+```
+
+## Production environment
+
+Build for production:
+
+`JEKYLL_ENV=production jekyll build`
