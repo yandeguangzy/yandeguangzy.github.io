@@ -1,20 +1,20 @@
-name:               "Ink"
-description:        "A minimalistic jekyll theme for humans"
+name:               "MIMI"
+description:        "mimi的博客"
 
 url:                ""
-author:             "thinker3197"
-email:              "jhondoe@abc.com"
+author:             "mimi"
+email:              "754199572@qq.com"
 gravatar_hash:      "205e460b479e2e5b48aec07710c08d50"
-twitter:            "jhondoe"
-email:              "jhondoe@abc.com"
-github:             "jhondoe"
-pinterest:          "jhondoe"
-linkedin:           "jhondoe"
-facebook:           "jhondoe"
+#twitter:            "jhondoe"
+#email:              "jhondoe@abc.com"
+github:             "https://github.com/yandeguangzy"
+#pinterest:          "jhondoe"
+#linkedin:           "jhondoe"
+#facebook:           "jhondoe"
 
 disqus_shortname:   "thinker3197"
 
-background:         "http://apple.wallpapersfine.com/wallpapers/original/1242x2208/w-5273.jpg"
+background:         "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1548251196602&di=562a04825252154d2431c2a470701c53&imgtype=0&src=http%3A%2F%2Fpic16.photophoto.cn%2F20100921%2F0008020224500580_b.jpg"
 
 paginate:           5
 paginate_path:      "/page:num/"
