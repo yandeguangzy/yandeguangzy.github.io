@@ -11,7 +11,7 @@ CocoaPods是iOS开发 下的一个第三方库管理工具。你能并轻松管�
 我们在使用CocoaPods是都会在项目目录下创建一个Podfile文件,然后把需要的库加进文件中
 > $ pod init
 
-![MacDown logo](https://github.com/yandeguangzy/yandeguangzy.github.io/resources/image/cocoapods文档/init.png)
+![MacDown logo](https://raw.githubusercontent.com/yandeguangzy/yandeguangzy.github.io/master/resources/image/init.png)
 
 * 安装三方库
 
@@ -26,7 +26,7 @@ CocoaPods是iOS开发 下的一个第三方库管理工具。你能并轻松管�
 > * 若存在，从这个本地三方库信息库中获取 Podfile 中对应三方库的下载，若不存在，拉取三方库信息库到 ~/.cocoapods/repo/中，并从远端拉取Podfile中对应的三方库源码至/Users/kw/Library/Caches/CocoaPods/Pods,然后拷贝至当前目录。
 
 #### 二、使用跟踪，CocoaPods干了什么
-![MacDown logo](https://github.com/yandeguangzy/yandeguangzy.github.io/resources/image/install.png)
+![MacDown logo](https://github.com/yandeguangzy/yandeguangzy.github.io/blob/master/resources/image/install.png?raw=true)
 
 * 阅读Podfile文件,并解决依赖关系
 * 与沙盒的文件进行比较
@@ -58,11 +58,11 @@ PodSpec是CocoaPods能用起来的另外一个重要的组成部分，它是Coco
 在创建的文件夹下执行
 
 > $pod spec create [name]
-![MacDown logo](https://github.com/yandeguangzy/yandeguangzy.github.io/resources/image/podspec.png)
+![MacDown logo](https://github.com/yandeguangzy/yandeguangzy.github.io/blob/master/resources/image/podspec.png?raw=true)
 
 这个文件中包含了私有库的所有配置信息，
 包括支持的iOS系统(s.platform)、依赖的系统库(s.frameworks)、依赖的其他CocoaPods库(s.dependency)、暴露的头文件(s.public_header_files)、源文件(s.source)、多重文件夹(s.subspec)等。
-![MacDown logo](https://github.com/yandeguangzy/yandeguangzy.github.io/resources/image/podspec注释.png)
+![MacDown logo](https://github.com/yandeguangzy/yandeguangzy.github.io/blob/master/resources/image/podspec注释.png?raw=true)
 
 修改完成之后用以下命令校验
 > $pod lib lint
@@ -95,7 +95,7 @@ PodSpec是CocoaPods能用起来的另外一个重要的组成部分，它是Coco
 
 ***
 >注：指定版本时主要标记远端git仓库
-![MacDown logo](https://github.com/yandeguangzy/yandeguangzy.github.io/resources/image/source.png)
+![MacDown logo](https://github.com/yandeguangzy/yandeguangzy.github.io/blob/master/resources/image/source.png?raw=true)
  
 #### 五、黑科技的小确幸
 我们了解完了CocoaPods的实现原理，并完成了一个私有库的创建之后，再回过头来看，我们发现，CocoaPods就是通过Podfile中的指定路径或指定podspec文件或指定git或指定版本去分析去下载路径及各方面的信息，也就是我们只要解决了podsepc文件，其他一切问题都可以迎刃而解，既然私有库的podspec文件也是通过自己的仓库去管理，那我们可以想想：
