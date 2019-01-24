@@ -1,7 +1,8 @@
 name:               "MIMI"
 description:        "mimi的博客"
+user_imageurl:      "http://b34.photo.store.qq.com/psu?/c53a2025-9359-4fb0-b836-2df34e714eff/c4JlP4DMzJiIBp9ew.kXiqtgcN8ShCQR7GeTyANIsyw!/b/YYyvJBb6XwAAYsgmTRSPpQAA&a=37&b=34&bo=8ABAAQAAAAABBJI!&rf=viewer_4"
 
-url:                "http://b34.photo.store.qq.com/psu?/c53a2025-9359-4fb0-b836-2df34e714eff/c4JlP4DMzJiIBp9ew.kXiqtgcN8ShCQR7GeTyANIsyw!/b/YYyvJBb6XwAAYsgmTRSPpQAA&a=37&b=34&bo=8ABAAQAAAAABBJI!&rf=viewer_4"
+url:                "https://yandeguangzy.github.io"
 author:             "mimi"
 email:              "754199572@qq.com"
 gravatar_hash:      "205e460b479e2e5b48aec07710c08d50"
@@ -27,8 +28,8 @@ markdown:           kramdown
 nav:
   - name:           "About"
     href:           "/about"
-  - name:           "Download"
-    href:           "/releases"
+  # - name:           "Download"
+  #   href:           "/releases"
 
 sass:
   style:            :compressed
